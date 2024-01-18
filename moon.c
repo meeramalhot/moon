@@ -4,10 +4,10 @@
 int moon_phase(int year,int month,int day)
 {
     int d,g,e;
-
-	  d = day;
+    
+    d = day;
     if(month == 2){
-		  d += 31;
+	d += 31;
     }
     else if(month > 2){
       d += 59+(month-3)*30.6+0.5;
