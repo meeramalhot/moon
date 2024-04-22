@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <time.h>
 
-int moon_phase(int year,int month,int day)
+int moon_phase(int year, int month, int day)
 {
-    int d,g,e;
+    int d, g, e;
     
     d = day;
     if(month == 2){
@@ -17,12 +17,13 @@ int moon_phase(int year,int month,int day)
     if(e == 25 || e == 24){
       ++e;
     }
-	return ((((e + d)*6+5)%177)/22 & 7);
+
+return ((((e + d)*6+5)%177)/22 & 7);
 }
 
 int main(void)
 {
-  char name[15];
+  char name[20];
   printf("Please enter your name: \n");
   scanf("%s", name);
 
